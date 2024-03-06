@@ -20,17 +20,24 @@ Vowels are: a, e, i, o, u.
 // Code
 
 function distanceToNearestVowel(str) {
+    const vowels = ["a", "e", "i", "o", "u"]
+
     const arr = str.split("");
     let distances = [];
 
     arr.forEach((element, index) => {
-        
+        for (let i = 0; i <= arr.length - 1; i++) {
+            if (vowels.includes(arr[index + i]) || vowels.includes(arr[index - i])) {
+                distances.push(i);
+                break;
+            }
+        }
     });
 
     console.log(distances);
 }
 
-// distanceToNearestVowel("aaaaa"); // [0, 0, 0, 0, 0]
-// distanceToNearestVowel("babbb"); // [1, 0, 1, 2, 3]
-// distanceToNearestVowel("abcdabcd"); // [0, 1, 2, 1, 0, 1, 2, 3]
+distanceToNearestVowel("aaaaa"); // [0, 0, 0, 0, 0]
+distanceToNearestVowel("babbb"); // [1, 0, 1, 2, 3]
+distanceToNearestVowel("abcdabcd"); // [0, 1, 2, 1, 0, 1, 2, 3]
 distanceToNearestVowel("shopper"); // [2, 1, 0, 1, 1, 0, 1]
