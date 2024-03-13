@@ -1,4 +1,4 @@
-// How Much is True? 3.4.24
+// How Much is True? Edabit 3.4.24
 
 /*
 Create a function which returns the number of true values there are in an array.

@@ -1,4 +1,4 @@
-// Distance to Nearest Vowel 3.4.24
+// Distance to Nearest Vowel Edabit 3.4.24
 
 /*
 Write a function that takes in a string and for each character, returns the distance to the nearest vowel in the string. If the character is a vowel itself, return 0.

@@ -1,4 +1,4 @@
-// Bitwise Operations 2.28.24
+// Bitwise Operations Edabit 2.28.24
 
 /*
 A decimal number can be represented as a sequence of bits. To illustrate:
